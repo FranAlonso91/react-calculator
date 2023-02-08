@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Oswald:wght@200;300;400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, #0077be, #00c6ff);
+  font-family: "Oswald", sans-serif;
+}
+img {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+}
+
+
+.calculator {
+  max-width: 320px;
+  background-color: #545863;
+  width: 400px;
+  border-radius: 12px;
+  border: 20px solid #44454e;
+}
+.calculator-buttons {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 10px;
+}
+
+button {
+  min-height: 50px;
+  font-size: 20px;
+  font-weight: 100;
+  border: none;
+  color: white;
+  background-color: rgb(200, 200, 200);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.calc-numbers {
+  background-color: #7d8c82;
+  color: black;
+  font-size: 3.5em;
+  border: 0;
+  padding: 0.2em;
+  text-align: right;
+  width: 100%;
+  height: 100px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
+.span-3 {
+  grid-column: span 3;
+}
+.btn {
+  font-size: 1em;
+  height: 65px;
+}
+.clear {
+  background-color: #94546f;
+  color: white;
+  grid-column: span 2;
+}
+.btn:hover {
+  background-color: grey;
+}
+.btn:active {
+  background-color: rgb(78, 64, 64);
+}
+.orange {
+  background-color: orange;
+}
